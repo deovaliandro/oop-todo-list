@@ -8,8 +8,6 @@ namespace Entity {
 
         public function getTodo(): string
         {
-            echo "kala";
-
             return $this->todo;
         }
 
