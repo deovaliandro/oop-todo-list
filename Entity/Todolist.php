@@ -1,11 +1,15 @@
 <?php
 
 namespace Entity {
-    class Todolist {
+
+    class Todolist
+    {
         private string $todo;
 
         public function getTodo(): string
         {
+            echo "kala";
+
             return $this->todo;
         }
 
