@@ -20,7 +20,5 @@ namespace Entity {
         {
             $this->todo = $todo;
         }
-
-
     }
 }

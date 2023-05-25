@@ -7,13 +7,11 @@ namespace Service {
 
     interface TodolistService
     {
-
         function showTodolist(): void;
 
         function addTodolist(string $todo): void;
 
         function removeTodolist(int $number): void;
-
     }
 
     class TodolistServiceImpl implements TodolistService
@@ -44,6 +42,11 @@ namespace Service {
 
         function removeTodolist(int $number): void
         {
+            if ($this->todolistRepository->remove($number)) {
+                echo "Success remove todo" . PHP_EOL;
+            } else {
+                echo "Failed remove todo" . PHP_EOL;
+            }
         }
     }
 }
