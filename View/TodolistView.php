@@ -3,7 +3,7 @@
 namespace View {
 
     use Helper\InputHelper;
-    use Service\TodolistServiceImpl;
+    use Service\TodolistService;
 
     class TodolistView
     {
